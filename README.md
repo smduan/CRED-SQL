@@ -1,2 +1,4 @@
 # CRED-SQL
-##The implementation of our paper
+The implementation of our paper
+
+# Cite
