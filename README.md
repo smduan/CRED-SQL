@@ -1,7 +1,9 @@
 # CRED-SQL
-The implementation of our paper
+This is the official repository for the paper "CRED-SQL: Enhancing Real-world Large Scale Database Text-to-SQL Parsing through Cluster Retrieval and Execution Description"
 
-# Usage Example
+## Environment
+
+## Run
 
 
 # Cite
