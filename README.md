@@ -22,7 +22,10 @@ CRED-SQL overcomes these limitations through a two-stage approach:
 <img width="1590" height="595" alt="image" src="https://github.com/user-attachments/assets/79edb5e3-df37-458c-b093-e8ff2538559e" />
 
 ## Environment
-
+Clone the repository and install required packages:
+```
+pip install -r requirements.txt
+```
 ## Run
 
 
