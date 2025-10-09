@@ -1,0 +1,1 @@
+docker pull cr.weaviate.io/semitechnologies/weaviate:1.25.1
