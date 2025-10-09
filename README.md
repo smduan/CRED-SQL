@@ -27,6 +27,24 @@ Clone the repository and install required packages:
 pip install -r requirements.txt
 ```
 ## Run
+1. Install Vector Database Weaviate（ https://weaviate.io/ ）
+```
+cd /weaviate
+sh docker_pull.sh
+sh docker_run.sh
+```
+2. Download bge-m3 and copy it to /var/rag/models
+```
+cd /models
+mkdir -p /var/rag/models
+python download_bge_m3.py
+cp -r ./bge-m3 /var/rag/models
+```
+3. Start CLSR schema retrieval
+```
+cd /CLSR/schema_retrieval/evaluation
+sh run_evaluation.sh
+```
 
 
 # Cite
