@@ -44,8 +44,22 @@ cp -r ./bge-m3 /var/rag/models
 ```
 cd /CLSR/schema_retrieval/evaluation
 sh run_evaluation.sh
+cd /CLSR/schema-choose/src/
+python llm_schema_choose.py
 ```
-
+4. NLQ-to-EDL and EDL-to-SQL
+   
+Through few-shot or fine-tuning LLMs, generate EDL first and then generate SQL based on the selected database schema and question.
+   
+The link to the EDL dataset: https://huggingface.co/datasets/ZR00/Spider_EDL, and https://huggingface.co/datasets/ZR00/Bird_EDL
+   
+The best-performing fine-tuned LLM on the Spider dataset is open-sourced as follows https://huggingface.co/ZR00/spider_qwen32b_train_q_to_edl_orischema and https://huggingface.co/ZR00/spider_qwen32b_train_edl_to_sql.
+```
+cd /CLSR/EDL-generation/
+python generate_spider.py
+cd /CLSR/sql_mapping/
+python generate_spider_edl_to_sql.py
+```
 
 # Cite
 ```
